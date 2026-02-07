@@ -10,16 +10,6 @@
 !skills/**
 !plugins/
 !plugins/**
-!global-memory/
-!global-memory/**
-
-# Track only memory subdirectory in projects
-!projects/
-projects/*
-!projects/-root/
-projects/-root/*
-!projects/-root/memory/
-!projects/-root/memory/**
 
 # Track root files
 !README.md
