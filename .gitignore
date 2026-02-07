@@ -2,20 +2,14 @@
 *
 
 # Track these directories and their contents
-!.github/
-!.github/**
 !agents/
 !agents/**
-!commands/
-!commands/**
-!conventions/
-!conventions/**
-!skills/
-!skills/**
 !output-styles/
 !output-styles/**
-!global-memory/
-!global-memory/**
+!skills/
+!skills/**
+!plugins/
+!plugins/**
 
 # Track root files
 !README.md
