@@ -384,3 +384,45 @@ For targeted updates:
 ```
 Use your doc-sync skill to update documentation in src/validators/
 ```
+
+### Memory Manager
+
+Sessions end, but learnings should persist. The memory-manager skill captures
+session insights and maintains cross-project knowledge.
+
+Two memory types work together:
+
+**Project memory** -- Session-specific learnings stored in
+`.claude/projects/<project>/memory/`. Captures bugs fixed, patterns discovered,
+decisions made, and why things were done certain ways. Each session writes a
+structured markdown file with timestamps, goals accomplished, and prevention
+strategies.
+
+**Global memory** -- Cross-project patterns in `~/.claude/global-memory/`.
+Reusable architectural insights, tool preferences, debugging strategies, and
+common pitfalls that apply universally. Organized into `patterns/` and
+`decisions/` subdirectories.
+
+Use it when:
+
+- Ending a session where non-trivial work was accomplished
+- Fixing bugs that could recur (capture root cause and prevention)
+- Discovering patterns worth remembering across projects
+- Making architectural decisions with rationale worth preserving
+
+```
+Use your memory-manager skill to capture this session
+```
+
+For global memory initialization (one-time setup):
+
+```
+Use your memory-manager skill to setup global memory
+```
+
+Memory files use timeless present tense -- they describe what was learned, not
+what was done. No temporal language like "Added X" or "Changed Y". Focus on why
+and prevention, not just what changed.
+
+The workflow preserves context across `/clear` commands. Plans persist.
+Learnings persist. Only the chat context resets.

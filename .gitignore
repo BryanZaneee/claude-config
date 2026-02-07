@@ -10,6 +10,8 @@
 !skills/**
 !plugins/
 !plugins/**
+!global-memory/
+!global-memory/**
 
 # Track root files
 !README.md
