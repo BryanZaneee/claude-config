@@ -37,6 +37,7 @@ Failure to follow these patterns creates technical debt and inconsistency across
 | `codebase-analysis/`  | Systematic codebase exploration           | Repository architecture review           |
 | `prompt-engineer/`    | Prompt optimization and engineering       | Improving agent prompts                  |
 | `arxiv-to-md/`        | arXiv paper to markdown conversion        | Converting papers for LLM consumption    |
+| `repo-conventions/`   | Governance files and README standard      | New repo, README, screenshots, PR shape  |
 
 ## Script Invocation
 
